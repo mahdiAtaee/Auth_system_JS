@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ثبت نام</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/Logo1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./assets/styles/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/styles/form.css" />
+    <link rel="stylesheet" href="./assets/styles/slider.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="right-section form">
+        <div class="title">
+          <span class="title">ساخت حساب کاربری جدید</span>
+        </div>
+        <form action="" id="register_form" method="post">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="firstName"
+              name="first_name"
+              placeholder=" "
+            />
+            <label for="firstName">نام</label>
+            <div class="error"></div>
+          </div>
+          <div class="input-wrapper">
+            <input type="text" id="lastName" name="last_name" placeholder=" " />
+            <label for="lastName">نام خانوادگی</label>
+            <div class="error"></div>
+          </div>
+          <div class="input-wrapper">
+            <input type="text" id="username" name="username" placeholder=" " />
+            <label for="username">نام کاربری</label>
+            <div class="error"></div>
+          </div>
+          <div class="input-wrapper">
+            <input type="text" id="password" name="password" placeholder=" " />
+            <label for="password">کلمه عبور</label>
+            <div class="error"></div>
+          </div>
+          <div class="input-wrapper">
+            <input type="text" id="email" name="email" placeholder=" " />
+            <label for="email">ایمیل</label>
+            <div class="error"></div>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="phoneNumber"
+              name="phone_number"
+              placeholder=" "
+            />
+            <label for="phoneNumber">شماره موبایل</label>
+            <div class="error"></div>
+          </div>
+          <input type="submit" class="btn" value="!! ثبت نام" />
+        </form>
+        <div class="footer">
+          <div class="isAccount">
+            <span>آیا حساب کاربری دارید؟</span>
+          </div>
+          <a href="#" class="btn create-account"> ! وارد شوید</a>
+        </div>
+      </div>
+      <div class="left-section slider">
+        <div class="owl-carousel owl-theme h-100">
+          <div class="item h-100">
+            <div class="item-title">حضور در مگاپروجکت ها</div>
+            <div class="item-image">
+              <img
+                src="./assets/img/Artboard 1.png"
+                class="img-fluid"
+                alt="#"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">حضور در پروژه های بین المللی</div>
+            <div class="item-image world">
+              <img src="./assets/img/9267.png" class="img-fluid" alt="#" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/scripts/jquery-3.3.1.min.js"></script>
+    <script src="./assets/scripts/owl.carousel.min.js"></script>
+    <script src="./assets/scripts/validationRegister.js"></script>
+    <script src="./assets/scripts/register.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

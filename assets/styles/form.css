@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90vw;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.container .right-section.form {
+  width: 50%;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+.container .right-section.form .title .first-title {
+  font-size: 3rem;
+  display: block;
+  font-weight: 800;
+}
+
+.container .right-section.form .title .describe {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.form .title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+form .input-wrapper {
+  position: relative;
+  height: 30px;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+form .input-wrapper input {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  background: transparent;
+  outline: none;
+  direction: rtl;
+  transition: 0.5s ease-in-out;
+}
+
+form .input-wrapper input:focus {
+  border-bottom: 1px solid #6a50d1;
+}
+
+form .input-wrapper input:placeholder-shown + label {
+  bottom: 1rem;
+  right: 0rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+form .input-wrapper input:focus + label,
+form .input-wrapper input + label {
+  position: absolute;
+  bottom: 2rem;
+  right: 0rem;
+  font-size: 0.7rem;
+  color: #0097ff;
+  transition: 0.2s ease-in-out;
+}
+
+form .input-wrapper .remember-password {
+  position: absolute;
+  top: -1rem;
+  font-size: 0.7rem;
+  color: #aaa;
+  text-decoration: none;
+  right: 0;
+  width: 100%;
+}
+
+.btn {
+  margin: 0 auto;
+  width: 130px;
+  height: 45px;
+  border-radius: 33px;
+  border: none;
+  background: #6a50d1;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer {
+  margin: 2rem;
+}
+
+.footer .isAccount {
+  font-size: 1rem;
+  position: relative;
+  color: #aaa;
+}
+
+.footer .isAccount::after,
+.footer .isAccount::before {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer .isAccount::before {
+  right: -75px;
+}
+
+.footer .isAccount::after {
+  left: 75px;
+}
+
+.create-account {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  opacity: 0.6;
+  transition: 0.5s ease;
+}
+
+.create-account:hover {
+  opacity: 1;
+}
